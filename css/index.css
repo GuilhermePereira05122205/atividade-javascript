@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para todo o documento */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    justify-items: center;
+}
+
+.header{
+    background-color: #1697E9;
+    padding: 20px;
+    text-align: right;
+}
+
+.header ul{
+    list-style: none;
+    font-size:large;
+}
+
+.header ul li{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio{
+    max-width: 80%;
+    border: 1px solid #1697E9;
+    margin-top: 10px;
+    padding-top: 10px;
+    min-width: 80%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-bottom: 10px;
+    min-height: 300px;
+}
+
+.portfolio .nome{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+}
+.portfolio .descricao{
+    margin: 10px;
+    text-align: justify;
+}
+
+.portfolio .nome p{
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.portfolio h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio img{
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.portfolio .redes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #1697E9;
+}
+.portfolio .redes div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid black;
+}
+
+.portfolio .redes img{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+main{
+    min-height: calc(100vh - 110px);
+    margin-bottom: 20px;
+}
+footer{
+    
+    width: 100%;
+    background-color: #1697E9;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    
+    
+}
+
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+        box-sizing: content-box;
+    }
+    
+}

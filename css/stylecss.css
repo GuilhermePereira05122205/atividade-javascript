@@ -1,0 +1,162 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    text-align: right;
+    color: #FFF;
+    padding-right: 5vh;
+    padding-top: 4vh;
+    font-size: 3vh;
+    display: flex;
+}
+
+.blue-nav {
+    background-color: #1697E9;
+}
+
+.nav-column {
+    width: 16%;
+}
+
+.white {
+    color:#FFF;
+    text-decoration: none;
+}
+
+.form {
+    text-align: left;
+    font-size: 4vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+.form div{
+    width: 90%;
+}
+
+.form button{
+    align-self: center;
+}
+
+.form h4{
+    margin-bottom: 20px !important;
+}
+
+.input {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1697E9;
+    width: 100%;
+    height: 6vh;
+    font-size: 3vh;
+    margin-right: 3vh;
+}
+
+.botao {
+    padding: 1vh;
+    margin-left: 1vh;
+    margin-right: 2vh;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #1697E9;
+    font-size: 3vh;
+    width: 100%;
+    max-width: 100px;
+    height: 7vh;
+    
+}
+
+.excluir {
+    background-color: #D1080F;
+}
+
+.alinhamento {
+    display: flex;
+    align-items: center;
+}
+
+.borda {
+    border: 1vh solid #1697E9;
+    box-sizing: border-box;
+}
+
+.formulario{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+
+img{
+    max-width: 200px;
+    display: block;
+    margin: 20px !important;
+    border-radius: 10px;
+}
+
+.imagem{
+    margin-bottom: 20px !important;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.botaoImagem{
+    background-color: #1697E9;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px !important;
+    width: 300px !important;
+    text-align: center;
+}
+
+#imagem{
+    display: none;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.botoes{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.conteudo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+}
+
+@media (max-width: 768px) {
+    .formulario{
+        max-width: 100%;
+    }
+
+    .form{
+        width: 100%;
+        gap: 5px;
+        grid-template-columns: 1fr;
+        justify-items: baseline;
+        box-sizing: border-box;
+    }
+    .conteudo{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+}

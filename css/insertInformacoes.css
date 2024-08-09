@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para todo o documento */
+    font-size: 16px; /* Define o tamanho da fonte média */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 40%; /* Define a largura do container */
+    margin: 35px auto; /* Centraliza o container na página verticalmente e 50px do topo */
+    padding: 15px;
+    border: 3px solid #007acc; /* Define a cor azul para a borda do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    box-sizing: border-box;
+}
+label {
+    display: block; /* Faz com que as etiquetas fiquem em uma nova linha */
+    margin-bottom: 5px; /* Adiciona um espaçamento entre as etiquetas */
+    margin-top: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px; 
+    border-radius: 1px; 
+    border: 1px solid #1697E9;;
+    box-sizing: border-box; 
+}
+textarea{
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 1px; 
+    border: 1px solid #1697E9;;
+    box-sizing: border-box; 
+}
+button {
+    width: 100px; /* Define a largura do botão */
+    height: 40px; /* Define a altura do botão */
+    font-size: 16px; /* Define o tamanho do texto dentro do botão */
+    padding: 10px; /* Adiciona um espaçamento interno ao botão */
+    margin-bottom: 15px; /* Adiciona um espaçamento entre os botões */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    border: 1px solid #007acc; /* Define uma borda para o botão */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura dos elementos */
+    background-color: #1697E9; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    cursor: pointer; /* Mostra o cursor como um ponteiro quando o mouse passa sobre o botão */
+    transition: background-color 0.3s; 
+    text-align: center;
+    margin-top: 10px;
+}
+button {
+    background-color: #007acc; /* Define a cor de fundo do botão */
+    color: black; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Mostra o cursor como um ponteiro quando o mouse passa sobre o botão */
+}
+h3{
+    justify-content: center;
+}
+nav ul li {
+    list-style: none; /* Remove os marcadores de lista */
+}
+nav ul li a {
+    text-decoration: none; /* Remove a decoração de texto dos links */
+}
+
+article .container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.animacao{
+    animation: mostrar 0s forwards;
+}
+
+.botoes{
+    display: grid;
+    grid-template-rows: 2fr;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin: 20px !important;
+    border-radius: 10px;
+}
+
+.imagem{
+    margin-bottom: 20px !important;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.imagem label{
+    background-color: #1697E9;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+#imagem{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+}
+
+@keyframes mostrar {
+    0% {
+        display: block;
+    }
+
+    100% {
+       display: none;
+    }
+}
